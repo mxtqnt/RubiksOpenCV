@@ -3,7 +3,7 @@ import numpy
 
 def desenhar(data):
     w, h = 600, 800
-    imagem = numpy.ones((w, h, 3), dtype=numpy.uint8) * 255
+    imagem = numpy.full((w, h, 3), (30, 30, 30), dtype=numpy.uint8)
     tamanho_face = (w//2)//2
     quadrados = tamanho_face//3
     y_meio = w//2 - (tamanho_face)//2
