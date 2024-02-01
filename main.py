@@ -1,5 +1,6 @@
 import csv
 from camera import camera
+from plano2d import desenhar
 
 data = camera()
 data = [elemento for vetor in data for elemento in vetor]
@@ -11,4 +12,4 @@ for i in range(18):
         matriz[i][j] = data[contador]
         contador += 1
 
-print(data)
+desenhar(data)
